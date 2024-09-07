@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Balance</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 300px; margin: 0 auto; text-align: center; padding: 50px; border: 1px solid #ccc; }
+        h1 { color: #4CAF50; }
+        input[type="number"], input[type="text"], input[type="button"] { margin: 10px 0; padding: 10px; width: 100%; }
+        .link { text-decoration: none; color: #4CAF50; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Send Balance</h1>
+        <input type="text" id="senderName" placeholder="Enter your name" />
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <input type="button" value="Send" onclick="sendBalance()" />
+        <br/>
+        <a class="link" href="balance.html">Back to Balance</a>
+    </div>
+    <script src="send_balance.js">
+        
+    </script>
+</body>
+</html>

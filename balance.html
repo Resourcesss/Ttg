@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Broker account</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <footer>
+            <p class="wel">welcome</p>
+            <img src="bit.gif" class="bit">
+            <div class="menu-icon" id="menuIcon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li style="position: relative; top: 10px"><a href="#home">About</a></li>
+                    
+                </ul>
+            </div>
+        </footer>
+        
+        <div class="container">
+            <h1 class="bacn"> Balance</h1>
+            <div class="balance" id="balance">$0.00</div>
+            <button class="wtd">withdraw</button> <button class="buy">buy</button>
+        </div>
+        
+        <div class="button" id="mine-button" onclick="startMining()"> <p class="mi">Start Mining</p> </div>
+        <div class="countdown" id="countdown"></div>
+        <img src="success.gif" alt="Success" class="success-image" id="success-image">
+        
+        <div class="crt">
+            <iframe style="aspect-ratio: 1200 / 630; width:90%; height:fit-content; position: relative;
+top: 50px; " src="https://www.coindesk.com/embedded-chart/LwPdD7Fjq7Rkc" width="90%" frameborder="0"></iframe>
+        </div>
+        
+        <div class="muvbu">
+            <button id="cryptoButton" onclick="showSection('crypto')" class="cyr"><strong>Crypto</strong></button>
+            <button id="nftsButton" onclick="showSection('nfts')" class="ns"><strong>NFTs</strong></button>
+        </div>
+
+        <div id="crypto" class="content-section">
+            <div class="contact-info">
+                <div>
+                    <img src="bcon.png" class="img">
+                    <p class="cbt">BTC</p>  
+                    <p class="bzi">$59,856.28 <span class="bzu">+4.59%</span></p>  
+                </div>
+                <div>
+                    <img src="etcon.png" class="img">
+                    <p class="cbt">ETH</p>
+                    <p class="bzi">$2,856.62 <span class="bzu">+9.38%</span></p>
+                </div> 
+                <div>
+                    <img src="ltcon.png" class="img">
+                    <p class="cbt">LTC</p>
+                    <p class="bzi">$856.62 <span class="bzu">+6.29%</span></p>
+                </div>
+                <div>
+                    <img src="bnbcon.png" class="img">
+                    <p class="cbt">BNB</p>
+                    <p class="bzi">$956.62 <span class="bzu">+2.74%</span></p>
+                </div>
+                <div>
+                    <img src="usdtcon.png" class="img">
+                    <p class="cbt">USDT</p>
+                    <p class="uzi">$656.92 <span class="bzu">+6.29%</span></p>
+                </div>
+                <div>
+                    <img src="soncon.png">
+                    <p class="cbt">SOL</p>
+                    <p class="bzi">$456.69 <span class="bzu">+3.29%</span></p>
+                </div>
+                <div class="ton">
+                    <img src="toncon.png">
+                    <p class="cbt">TON</p>
+                    <p class="bzi">$356.34 <span class="bzu">+2.29%</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="nfts" class="content-section">
+            <img src="ftn.png" class="ftn">
+            <p class="nrh">No NFTs yet. Purchased or received NFTs will show up <br> here.</p>
+            <div class="br"></div>
+        </div>
+        
+        <div class="brs"></div>
+        <div class="butom">
+           <div class="bum-buttons">
+        <button> <img src="Hobum.png" id="bum-sz"> <br>Home </button>
+        <button> <img src="Inbum.png" id="bum-sz"> <br>Inbox </button>
+        <button> <img src="Trn.bum.png" id="bum-sz"> <br>Transactions </button>
+        <button> <img src="Probum.png" id="bum-sz"> <br> Profile </button>
+    </div>
+        </div>
+       
+        <script src="balance.js"></script>
+    </body>
+</html>
